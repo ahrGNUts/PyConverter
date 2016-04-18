@@ -14,7 +14,16 @@ def show_menu():
 
 def value_input(conversion_type):
     if conversion_type == 1:
-        # get value, call function
+        val = float(raw_input('Enter degrees in Celsius to convert: '))
+        celsius_to_fahrenheit(val)
+    elif conversion_type == 2:
+        val = float(raw_input('Enter pounds to convert to kilograms: '))
+        pounds_to_kilos(val)
+    elif conversion_type == 3:
+        val = float(raw_input('Enter feet to convert to kilometers: '))
+        feet_to_km(val)
+    else:
+        print "Invalid entry. Now exiting..."
 
 def celsius_to_fahrenheit(input):
     # stuff happens
