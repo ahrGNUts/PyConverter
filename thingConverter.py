@@ -45,3 +45,5 @@ def feet_to_km(feet):
 def main():
     choice = show_menu()  # call menu, get user choice
     value_input(choice)  # user enters n units to be converted, conversion function called, output, end program
+
+main()
