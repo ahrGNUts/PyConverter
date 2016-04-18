@@ -10,18 +10,18 @@ def show_menu():
     print "2. Pounds to Kilograms"
     print "3. Feet to Kilometers"
 
-    return int(raw_input('Choice: '))
+    return input('Choice: ')
 
 
 def value_input(conversion_type):  # get whatever value is going to be converted, call conversion function
     if conversion_type == 1:
-        val = float(raw_input('Enter degrees in Celsius to convert: '))
+        val = input('Enter degrees in Celsius to convert: ')
         celsius_to_fahrenheit(val)
     elif conversion_type == 2:
-        val = float(raw_input('Enter pounds to convert to kilograms: '))
+        val = input('Enter pounds to convert to kilograms: ')
         pounds_to_kilos(val)
     elif conversion_type == 3:
-        val = float(raw_input('Enter feet to convert to kilometers: '))
+        val = input('Enter feet to convert to kilometers: ')
         feet_to_km(val)
     else:
         print "Invalid entry. Now exiting..."
