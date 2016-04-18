@@ -1,6 +1,6 @@
 #!/usr/bin/python
 
-# this program should display a menu and convert input into whatever the function calls for
+# this program displays a menu and converts input into whatever the function calls for
 
 
 def show_menu():
