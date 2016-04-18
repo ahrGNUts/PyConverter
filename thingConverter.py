@@ -33,8 +33,8 @@ def celsius_to_fahrenheit(c_degrees):
 
 
 def pounds_to_kilos(pounds):
-    kilos = pounds / 2.2  # untested
-    print str(pounds) + ' lb(s) = ' + str(kilos) + ' kg(s)'
+    kilos = pounds / 2.2046226218  # conversion calculation
+    print '%.2f' % pounds + ' lb(s) = ' + '%.2f' % kilos + ' kg(s)'
 
 
 def feet_to_km(feet):
