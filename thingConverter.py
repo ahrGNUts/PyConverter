@@ -13,7 +13,7 @@ def show_menu():
     return int(raw_input('Choice: '))
 
 
-def value_input(conversion_type):
+def value_input(conversion_type):  # get whatever value is going to be converted, call conversion function
     if conversion_type == 1:
         val = float(raw_input('Enter degrees in Celsius to convert: '))
         celsius_to_fahrenheit(val)
@@ -28,8 +28,8 @@ def value_input(conversion_type):
 
 
 def celsius_to_fahrenheit(c_degrees):
-    f_degrees = c_degrees * 1.8 + 32  # untested
-    print str(c_degrees) + 'C = ' + str(f_degrees) + 'F'
+    f_degrees = c_degrees * 1.8 + 32  # conversion calculation
+    print str(c_degrees) + ' C = ' + str(f_degrees) + ' F'  # output, end
 
 
 def pounds_to_kilos(pounds):
@@ -46,4 +46,4 @@ def main():
     choice = show_menu()  # call menu, get user choice
     value_input(choice)  # user enters n units to be converted, conversion function called, output, end program
 
-main()
+main()  # run
